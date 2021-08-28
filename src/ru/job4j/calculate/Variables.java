@@ -1,7 +1,5 @@
 package ru.job4j.calculate;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class Variables {
     public static void main(String[] args) {
         byte mem = 1;

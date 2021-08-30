@@ -15,11 +15,11 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax5To3Then5() {
-        int left = 5;
+    public void whenMax4To3Then4() {
+        int left = 4;
         int right = 3;
         int result = Max.max(left, right);
-        int expected = 5;
+        int expected = 4;
         Assert.assertEquals(result, expected);
     }
 

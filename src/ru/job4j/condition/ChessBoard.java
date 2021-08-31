@@ -7,8 +7,7 @@ public class ChessBoard {
                    && x1 <= 7 && x2 <= 7 && y1 <= 7 && y2 <= 7
                         && Math.abs(x1 - x2) == Math.abs(y1 - y2)) {
             return Math.abs(x1 - x2);
-        } else {
-            return 0;
         }
+        return 0;
     }
 }

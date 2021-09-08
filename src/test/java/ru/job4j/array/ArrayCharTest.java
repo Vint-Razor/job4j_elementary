@@ -20,12 +20,4 @@ public class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         Assert.assertFalse(result);
     }
-
-    @Test
-    public void whenPrefixMoreWordThenFalse() {
-        char[] word = {'H', 'i'};
-        char[] pref = {'H', 'e', 'l', 'l', 'o'};
-        boolean result = ArrayChar.startsWith(word, pref);
-        Assert.assertFalse(result);
-    }
 }

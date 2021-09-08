@@ -20,12 +20,4 @@ public class EndWithTest {
         boolean result = EndsWith.endsWith(word, post);
         Assert.assertFalse(result);
     }
-
-    @Test
-    public void whenPrefixMoreWordThenTrue() {
-        char[] word = {'l', 'o'};
-        char[] post = {'H', 'e', 'l', 'l', 'o'};
-        boolean result = EndsWith.endsWith(word, post);
-        Assert.assertFalse(result);
-    }
 }

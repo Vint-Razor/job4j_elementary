@@ -26,13 +26,13 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind22Then1() {
+    public void whenFind22Then3() {
         int[] data = new int[] {15, 22, 1, 32, 104};
-        int el = 22;
+        int el = 32;
         int start = 1;
         int finish = 3;
         int result = FindLoop.indexOf(data, el, start, finish);
-        int expected = 1;
+        int expected = 3;
         Assert.assertEquals(expected, result);
     }
 

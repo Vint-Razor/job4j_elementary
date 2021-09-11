@@ -7,18 +7,17 @@ public class Machine {
         int[] coins = {10, 5, 2, 1};
         int[] rsl = new int[100];
         int balance = money - price;
-        int cent = 0;
-        int coinCount = 0;
+        int i = 0;
+        int size = 0;
         while (balance > 0) {
-            if (balance >= coins[cent]) {
-                balance -= coins[cent];
-                rsl[coinCount] = coins[cent];
-                coinCount++;
+            if (balance >= coins[i]) {
+                balance -= coins[i];
+                rsl[size] = coins[i];
+                size++;
             } else {
-                cent++;
+                i++;
             }
         }
-        int size = coinCount;
         return Arrays.copyOf(rsl, size);
     }
 }

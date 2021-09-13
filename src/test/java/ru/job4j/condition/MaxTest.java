@@ -15,19 +15,22 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax4To3Then4() {
-        int left = 4;
-        int right = 3;
-        int result = Max.max(left, right);
-        int expected = 4;
+    public void whenMax435Then5() {
+        int first = 4;
+        int second = 3;
+        int third = 5;
+        int result = Max.max(first, second, third);
+        int expected = 5;
         Assert.assertEquals(result, expected);
     }
 
     @Test
-    public void whenMax4To9Then9() {
-        int left = 4;
-        int right = 9;
-        int result = Max.max(left, right);
+    public void whenMax4359Then9() {
+        int first = 4;
+        int second = 3;
+        int third = 5;
+        int four = 9;
+        int result = Max.max(first, second, third, four);
         int expected = 9;
         Assert.assertEquals(result, expected);
     }
